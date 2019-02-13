@@ -1,0 +1,53 @@
+.container
+{
+    grid-template-areas: 
+        "gheader",
+        "gmain",
+        "gfooter";
+}
+
+.header
+{
+    grid-area: gheader;
+}
+
+.main
+{
+    grid-area: gmain;
+    grid-template-areas: 
+        "gelev",
+        "gbild1",
+        "gskole",
+        "gbild2",
+        "gfakta";
+}
+
+.main_elev
+{
+    grid-area: gelev;
+}
+
+.main_bild1
+{
+    grid-area: gbild1;
+}
+
+.main_skole
+{
+    grid-area: gskole;
+}
+
+.main_bild2
+{
+    grid-area: gbild2;
+}
+
+.main_fakta
+{
+    grid-area: gfakta;
+}
+
+.footer
+{
+    grid-area: gfooter;
+}
