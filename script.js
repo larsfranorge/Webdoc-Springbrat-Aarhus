@@ -1,8 +1,18 @@
-// Et array der skal indeholde alle elementer der skal starte en animation når der scrolles over dem
+// Array til at indeholde alle elementer der skal animeres; dem med "scroll_anim" klassen
 var things = new Array();
+
+// En nydelig variabel til at indeholde audio-objekter
+var sounds = document.getElementsByTagName("audio");
 
 // Grænse for hvor på skærmen animationen skal starte; højere værdi starter længere nede
 var threshold = 0;
+
+// Indstil alle elementer med "scroll_anim" klassen til at animere når de scrolles hen til
+var anims = document.getElementsByClassName("scroll_anim");
+for (i=0; i<anims.length; i++)
+{
+    animSetup(anims[i]);
+}
 
 function scrollCheck()
 {
@@ -19,17 +29,10 @@ function scrollCheck()
     }
 }
 
-// Indstil disse elementer til at animere når de scrolles hen til
-var anims = document.getElementsByClassName("scroll_anim");
-for (i=0; i<anims.length; i++)
-{
-    animSetup(anims[i]);
-}
-
 function animSetup(thing)
 {
-    // Indsæt element i array
-    things.push(thing);
+    // Indsæt element i array (skal åbenbart være der for at lortet fungerer)
+    things[things.length] = thing;
 
     // Definér elementets Y-koordinat; vi starter med dets relative y-offset i forhold til dens nærmeste parent
     // (HTML er åbenbart ikke smart nok til at have en property for den absolutte koordinat)
@@ -54,6 +57,31 @@ function animSetup(thing)
 
 // Kør scrollCheck hvis der scrolles med siden
 window.addEventListener("scroll", scrollCheck);
+
+// Loop gennem alle audio elementer
+for (i=0; i<sounds.length; i++)
+{
+    // Slå autoplay fra, just in case
+    sounds[i].autoplay = false;
+
+    // Hvis musen går ind i objektet, start lyden
+    sounds[i].addEventListener("mouseenter", function() {playSound(sounds[i])});
+
+    // Hvis musen går ud af objektet, sæt lyden på pause
+    sounds[i].addEventListener("mouseleave", function() {stopSound(sounds[i])});
+}
+
+// Start en lyd
+function playSound(snd)
+{
+    snd.play();
+}
+
+// Sæt en lyd på pause
+function stopSound(snd)
+{
+    snd.pause();
+}
 
 window.onscroll = function() {
     var elevVideo = document.getElementById("main_elev__video");
