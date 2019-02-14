@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
 {
     grid-area: gheader;
     height: 110vh;
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(FakeBilleder/victor-freitas-604835-unsplash.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/victor-freitas-604835-unsplash.jpg);
     z-index: -10;
     
 }
@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
 }
 
 .heading_text {
-    color:#FFD950;
+    color:#f0c844;
     text-transform: uppercase;
 }
 
@@ -52,6 +52,7 @@ h1, h2, h3, h4 {
     font-size: 6rem;
     font-weight: 500;
     letter-spacing: 0.5rem;
+    text-shadow: #595959 4px 4px 10px;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -62,6 +63,7 @@ h1, h2, h3, h4 {
     display: block;
     font-size: 2rem;
     font-weight: 300;
+    text-shadow: #595959 2px 2px 10px;
 
     animation: moveInRight 1s ease-out;
 }
@@ -114,7 +116,7 @@ h1, h2, h3, h4 {
     grid-area: gelev;
     text-align: left;
     font-family: lato;
-    background-color: #fff;
+    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.97), rgba(179, 157, 54, 0.90)), url(FakeBilleder/rawpixel-604759-unsplash.jpg);
     padding: 5% 15% 0% 15%;
 }
 
@@ -134,8 +136,8 @@ h1, h2, h3, h4 {
 .main_bild1
 {
     grid-area: gbild1;
-    height: 110vh;
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(FakeBilleder/neonbrand-426918-unsplash.jpg);
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/neonbrand-426918-unsplash.jpg);
     z-index: -8;
 }
 
@@ -155,6 +157,7 @@ h1, h2, h3, h4 {
     font-weight: 700;
     color: #FFD950;
     animation: moveInRight 1s ease-out;
+    text-shadow: #595959 3px 3px 10px;
 }
 
 .main_skole
@@ -163,6 +166,7 @@ h1, h2, h3, h4 {
     text-align: left;
     font-family: lato;
     background-color: #fff;
+    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.97), rgba(179, 157, 54, 0.90)), url(FakeBilleder/rawpixel-604759-unsplash.jpg);
     padding: 5% 15% 0% 15%;
 }
 
@@ -182,8 +186,8 @@ h1, h2, h3, h4 {
 .main_bild2
 {
     grid-area: gbild2;
-    height: 110vh;
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(FakeBilleder/isaiah-rustad-527191-unsplash.jpg);
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/isaiah-rustad-527191-unsplash.jpg);
     z-index: -6;
 }
 
@@ -203,6 +207,7 @@ h1, h2, h3, h4 {
     font-weight: 700;
     color: #FFD950;
     animation: moveInRight 1s ease-out;
+    text-shadow: #595959 3px 3px 10px;
 }
 
 .main_fakta
