@@ -58,18 +58,26 @@ function animSetup(thing)
 // Kør scrollCheck hvis der scrolles med siden
 window.addEventListener("scroll", scrollCheck);
 
+// Loop gennem alle audio elementer
 for (i=0; i<sounds.length; i++)
 {
+    // Slå autoplay fra, just in case
     sounds[i].autoplay = false;
+
+    // Hvis musen går ind i objektet, start lyden
     sounds[i].addEventListener("mouseenter", function() {playSound(sounds[i])});
+
+    // Hvis musen går ud af objektet, sæt lyden på pause
     sounds[i].addEventListener("mouseleave", function() {stopSound(sounds[i])});
 }
 
+// Start en lyd
 function playSound(snd)
 {
     snd.play();
 }
 
+// Sæt en lyd på pause
 function stopSound(snd)
 {
     snd.pause();
