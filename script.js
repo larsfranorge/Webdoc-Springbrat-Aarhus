@@ -54,3 +54,20 @@ function animSetup(thing)
 
 // Kør scrollCheck hvis der scrolles med siden
 window.addEventListener("scroll", scrollCheck);
+
+window.onscroll = function() {
+    var elevVideo = document.getElementById("main_elev__video");
+
+    var skoleVideo = document.getElementById("main_skole__video");
+
+    if  (elevVideo.getBoundingClientRect().bottom < 250 || elevVideo.getBoundingClientRect().top > 250)
+        elevVideo.pause();
+    else 
+        elevVideo.play(); 
+
+    if  (skoleVideo.getBoundingClientRect().bottom < 400 || skoleVideo.getBoundingClientRect().top > 400)
+        skoleVideo.pause();
+    else 
+        skoleVideo.play(); 
+
+}

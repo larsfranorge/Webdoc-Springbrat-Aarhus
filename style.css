@@ -115,19 +115,20 @@ h1, h2, h3, h4 {
     text-align: left;
     font-family: lato;
     background-color: #fff;
+    padding: 5% 15% 0% 15%;
 }
 
 .main_elev__heading {
-    padding: 5% 15% 0% 15%;
+    
 }
 
 .main_elev__text {
     text-align: justify;
-    padding: 0% 15% 5% 15%;
 }
 
 .main_elev__video {
     width: 100%;
+    padding: 5% 0%;
 }
 
 .main_bild1
@@ -162,19 +163,20 @@ h1, h2, h3, h4 {
     text-align: left;
     font-family: lato;
     background-color: #fff;
+    padding: 5% 15% 0% 15%;
 }
 
 .main_skole__heading {
-    padding: 5% 15% 0% 15%;
+    
 }
 
 .main_skole__text {
     text-align: justify;
-    padding: 0% 15% 5% 15%;
 }
 
 .main_skole__video {
     width: 100%;
+    padding: 5% 0%;
 }
 
 .main_bild2
