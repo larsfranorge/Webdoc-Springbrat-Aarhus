@@ -216,42 +216,40 @@ h1, h2, h3, h4, p {
 {
     grid-area: gfakta;
     background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(FakeBilleder/rawpixel-604759-unsplash.jpg);
+    overflow: hidden;
 }
 
 .main_fakta__box {
-    
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main_fakta__box1 {
     display: flex;
     flex-direction: row;
     padding: 5% 20% 0 5%;
-    left: -15%;
 }
 
 .main_fakta__box2 {
     display: flex;
     flex-direction: row;
-    padding: 5% 15% 0% 10%;
-    left: -5%;
+    padding: 5% 15% 0 10%;
 }
 
 .main_fakta__box3 {
     display: flex;
     flex-direction: row;
     padding: 5% 10% 0 15%;
-    left: 5%;
 }
 
 .main_fakta__box4 {
     display: flex;
     flex-direction: row;
     padding: 5% 5% 5% 20%;
-    left: 15%;
 }
 
 .main_fakta__boxp {
-    margin: 0rem 4rem;
+    margin: 0 0 0 4rem;
     animation: moveInRight 1s ease-out;
 }
 

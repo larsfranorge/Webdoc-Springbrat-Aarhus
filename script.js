@@ -99,12 +99,11 @@ window.addEventListener("scroll", function() {
 
     if  (elevVideo.getBoundingClientRect().bottom < 250 || elevVideo.getBoundingClientRect().top > 250)
         elevVideo.pause();
-    else 
+    else
         elevVideo.play(); 
 
     if  (skoleVideo.getBoundingClientRect().bottom < 400 || skoleVideo.getBoundingClientRect().top > 400)
         skoleVideo.pause();
-    else 
+    else
         skoleVideo.play(); 
-
 });
