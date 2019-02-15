@@ -18,7 +18,7 @@ h1, h2, h3, h4, p {
         "gfooter";
 }
 
-.header, .main_bild1, .main_bild2 {
+.header, .main_bild1, .main_bild2, footer {
     position: relative;
     background-size: cover;
     background-position: top;
@@ -256,7 +256,22 @@ h1, h2, h3, h4, p {
 .footer
 {
     grid-area: gfooter;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/isaiah-rustad-527191-unsplash.jpg);
+    height: 50vh;
+    z-index: -4;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    
 }
+
+.so-me__icon {
+    margin: 5rem;
+    display: block;
+    text-decoration: none;
+
+
 
 .fakta_ikon_anim
 {
