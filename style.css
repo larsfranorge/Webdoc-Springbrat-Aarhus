@@ -219,7 +219,36 @@ h1, h2, h3, h4, p {
 }
 
 .main_fakta__box {
+    
+}
+
+.main_fakta__box1 {
     display: flex;
+    flex-direction: row;
+    padding: 5% 15% 0% 15%;
+}
+
+.main_fakta__box2 {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 15% 0% 15%;
+}
+
+.main_fakta__box3 {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 15% 0% 15%;
+}
+
+.main_fakta__box4 {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 15% 5% 15%;
+}
+
+.main_fakta__boxp {
+    margin: 0rem 4rem;
+    animation: moveInLeft 1s ease-out;
 }
 
 .footer
