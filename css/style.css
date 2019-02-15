@@ -30,7 +30,7 @@ h1, h2, h3, h4, p {
 {
     grid-area: gheader;
     height: 110vh;
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/victor-freitas-604835-unsplash.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(../FakeBilleder/victor-freitas-604835-unsplash.jpg);
     z-index: -10;
     
 }
@@ -118,7 +118,7 @@ h1, h2, h3, h4, p {
     grid-area: gelev;
     text-align: left;
     font-family: lato;
-    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(FakeBilleder/rawpixel-604759-unsplash.jpg);
+    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(../FakeBilleder/rawpixel-604759-unsplash.jpg);
     padding: 5% 15% 0% 15%;
 }
 
@@ -139,7 +139,7 @@ h1, h2, h3, h4, p {
 {
     grid-area: gbild1;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/neonbrand-426918-unsplash.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(../FakeBilleder/neonbrand-426918-unsplash.jpg);
     z-index: -8;
 }
 
@@ -168,7 +168,7 @@ h1, h2, h3, h4, p {
     text-align: left;
     font-family: lato;
     background-color: #fff;
-    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(FakeBilleder/rawpixel-604759-unsplash.jpg);
+    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(../FakeBilleder/rawpixel-604759-unsplash.jpg);
     padding: 5% 15% 0% 15%;
 }
 
@@ -189,7 +189,7 @@ h1, h2, h3, h4, p {
 {
     grid-area: gbild2;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(FakeBilleder/isaiah-rustad-527191-unsplash.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7)), url(../FakeBilleder/isaiah-rustad-527191-unsplash.jpg);
     z-index: -6;
 }
 
@@ -215,7 +215,7 @@ h1, h2, h3, h4, p {
 .main_fakta
 {
     grid-area: gfakta;
-    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(FakeBilleder/rawpixel-604759-unsplash.jpg);
+    background-image: linear-gradient(to bottom, rgba(240, 200, 68, 0.98), rgba(179, 157, 54, 0.90)), url(../FakeBilleder/rawpixel-604759-unsplash.jpg);
     overflow: hidden;
 }
 
