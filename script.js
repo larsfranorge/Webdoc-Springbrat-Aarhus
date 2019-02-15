@@ -35,7 +35,7 @@ function animSetup(thing)
     things[things.length] = thing;
 
     // Definér elementets Y-koordinat; vi starter med dets relative y-offset i forhold til dens nærmeste parent
-    // (HTML er åbenbart ikke smart nok til at have en property for den absolutte koordinat)
+    // (... kendte ikke til getBoundingClientRect() på tidspunktet)
     things[things.length-1].y = things[things.length-1].offsetTop;
 
     // Find elementets "offset parent"
@@ -83,7 +83,7 @@ function stopSound(snd)
     snd.pause();
 }
 
-window.onscroll = function() {
+window.addEventListener("scroll", function() {
     var elevVideo = document.getElementById("main_elev__video");
 
     var skoleVideo = document.getElementById("main_skole__video");
@@ -98,4 +98,4 @@ window.onscroll = function() {
     else 
         skoleVideo.play(); 
 
-}
+});
