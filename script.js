@@ -69,6 +69,15 @@ for (i=0; i<sounds.length; i++)
 
     // Hvis musen går ud af objektet, sæt lyden på pause
     sounds[i].addEventListener("mouseleave", function() {stopSound(sounds[i])});
+
+    // Hvis der klikkes på lydobjektet, skift mellem pause og play
+    sounds[i].addEventListener("click", function()
+    {
+        if (sounds[i].paused == false)
+            stopSound(sounds[i]);
+        else
+            playSound(sounds[i]);
+    });
 }
 
 // Start en lyd
