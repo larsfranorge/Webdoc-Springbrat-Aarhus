@@ -20,7 +20,7 @@ function scrollCheck()
     for (i=0; i<things.length; i++)
     {
         // Hvis vinduets position kommer tæt på elementet...
-        if (window.pageYOffset + window.innerHeight > things[i].y + threshold)
+        if (window.pageYOffset + window.innerHeight > getY(things[i]) + threshold)
         {
             // Start elementets animation
             things[i].style.animationPlayState = "running";
@@ -34,25 +34,31 @@ function animSetup(thing)
     // Indsæt element i array (skal åbenbart være der for at lortet fungerer)
     things[things.length] = thing;
 
+    // Sæt elementets animation på pause ind til videre
+    things[things.length-1].style.animationPlayState = "paused";
+    things[things.length-1].style.WebkitAnimationPlayState = "paused";
+}
+
+// Returnerer et givent elements absolutte Y-position
+function getY(ele)
+{
     // Definér elementets Y-koordinat; vi starter med dets relative y-offset i forhold til dens nærmeste parent
     // (... kendte ikke til getBoundingClientRect() på tidspunktet)
-    things[things.length-1].y = things[things.length-1].offsetTop;
+    y = ele.offsetTop;
 
     // Find elementets "offset parent"
-    next = things[things.length-1].offsetParent;
+    next = ele.offsetParent;
 
     // Loop gennem alle parents for at finde den absolutte Y-position
-    while (things[things.length-1] != next && next != null)
+    while (ele != next && next != null)
     {
         // Læg parentens offset til elementets Y-værdi
-        things[things.length-1].y += next.offsetTop;
+        y += next.offsetTop;
         // Find næste parent, hvis der er en
         next = next.offsetParent;
     }
 
-    // Sæt elementets animation på pause ind til videre
-    things[things.length-1].style.animationPlayState = "paused";
-    things[things.length-1].style.WebkitAnimationPlayState = "paused";
+    return y;
 }
 
 // Kør scrollCheck hvis der scrolles med siden
