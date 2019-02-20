@@ -113,7 +113,3 @@ window.addEventListener("scroll", function() {
     else
         skoleVideo.play(); 
 });
-
-var speech = window.speechSynthesis;
-var word = new SpeechSynthesisUtterance('your mother');
-speech.speak(word);
